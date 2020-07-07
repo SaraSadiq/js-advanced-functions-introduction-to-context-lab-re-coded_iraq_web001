@@ -1,5 +1,5 @@
 // Your code here
-let EmployeeRecord = function(row){
+let createEmployeeRecord = function(row){
     return {
         firstName: row[0],
         familyName: row[1],
@@ -12,7 +12,7 @@ let EmployeeRecord = function(row){
 
 let createEmployeeRecords = function(employeeRowData) {
     return employeeRowData.map(function(row){
-        return EmployeeRecord(row)
+        return createEmployeeRecord(row)
     })
 }
 
